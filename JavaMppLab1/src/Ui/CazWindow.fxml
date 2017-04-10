@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="611.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ui.CazWindowController">
+   <children>
+      <Button fx:id="logout_button" layoutX="531.0" layoutY="536.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="66.0" text="Logout" />
+      <TableView fx:id="tableParticipanti" layoutX="22.0" layoutY="37.0" prefHeight="106.0" prefWidth="243.0">
+        <columns>
+          <TableColumn fx:id="NumeColumn" prefWidth="139.0" text="Nume" />
+          <TableColumn fx:id="VarstaColumn" prefWidth="102.0" text="Varsta" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tableProbe" layoutX="22.0" layoutY="233.0" prefHeight="106.0" prefWidth="340.0">
+        <columns>
+          <TableColumn fx:id="Stil2Column" prefWidth="92.0" text="Stil" />
+          <TableColumn fx:id="Distanta2Column" prefWidth="91.0" text="Distanta" />
+            <TableColumn fx:id="Participanti2Column" prefWidth="154.0" text="Participanti" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="Stiluri" layoutX="29.0" layoutY="153.0" prefWidth="150.0" promptText="Stil" />
+      <ComboBox fx:id="Distante" layoutX="29.0" layoutY="186.0" prefWidth="150.0" promptText="Distanta" />
+      <Button fx:id="Cautare" layoutX="191.0" layoutY="175.0" mnemonicParsing="false" onAction="#apasare_cautare" text="Cautare Participanti" />
+      <Slider fx:id="VarstaSlider" layoutX="39.0" layoutY="371.0" min="18.0" onContextMenuRequested="#set_varsta" onDragDetected="#set_varsta" onDragDone="#set_varsta" onDragDropped="#set_varsta" onDragEntered="#set_varsta" onDragExited="#set_varsta" onDragOver="#set_varsta" onMouseClicked="#set_varsta" onMouseDragEntered="#set_varsta" onMouseDragExited="#set_varsta" onMouseDragOver="#set_varsta" onMouseDragReleased="#set_varsta" onMouseDragged="#set_varsta" onMouseEntered="#set_varsta" onMouseExited="#set_varsta" onMouseMoved="#set_varsta" onMousePressed="#set_varsta" onMouseReleased="#set_varsta" onScroll="#set_varsta" onScrollFinished="#set_varsta" onScrollStarted="#set_varsta" />
+      <Label fx:id="Varsta" layoutX="78.0" layoutY="357.0" text="Varsta" />
+      <TextField fx:id="nume" layoutX="42.0" layoutY="392.0" promptText="Nume" />
+      <Button fx:id="adaugare_participant" layoutX="51.0" layoutY="424.0" mnemonicParsing="false" onAction="#add_participant" text="Adaugare Participant" />
+   </children>
+</AnchorPane>
